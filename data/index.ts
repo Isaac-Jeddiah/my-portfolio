@@ -49,7 +49,7 @@ export const gridItems = [
 
   {
     id: 5,
-    title: "Currently building a JS Animation library",
+    title: "Currently building a Social media application",
     description: "The Inside Scoop",
     className: "md:col-span-3 md:row-span-2",
     imgClassName: "absolute right-0 bottom-0 md:w-96 w-60",
@@ -72,32 +72,32 @@ export const gridItems = [
 export const projects = [
   {
     id: 1,
-    title: "3D Solar System Planets to Explore",
-    des: "Explore the wonders of our solar system with this captivating 3D simulation of the planets using Three.js.",
+    title: "3D Space Debris Impact Management Project",
+    des: "Formulated an innovative data analysis tool using Python that visualizes potential space debris impact areas, integrating  live satellite feeds with THREE.js. This tool supports crucial operational decisions in aerospace safety management.  Engaged React JS, Node JS, MongoDB, CSS, and Python",
     img: "/p1.svg",
     iconLists: ["/re.svg", "/tail.svg", "/ts.svg", "/three.svg", "/fm.svg"],
     link: "/ui.earth.com",
   },
   {
     id: 2,
-    title: "Yoom - Video Conferencing App",
-    des: "Simplify your video conferencing experience with Yoom. Seamlessly connect with colleagues and friends.",
+    title: "Video Conferencing App",
+    des: "Simplify your video conferencing experience with it. Seamlessly connect with colleagues and friends.",
     img: "/p2.svg",
     iconLists: ["/next.svg", "/tail.svg", "/ts.svg", "/stream.svg", "/c.svg"],
     link: "/ui.yoom.com",
   },
   {
     id: 3,
-    title: "AI Image SaaS - Canva Application",
-    des: "A REAL Software-as-a-Service app with AI features and a payments and credits system using the latest tech stack.",
+    title: "Geolocation Attendance App",
+    des: "Created a Geolocation Attendance System for SIH 2024, utilizing location-based attendance recording along with face  and fingerprint authentication. Employed Flutter, Dart, Firebase, and Google API to develop the system.",
     img: "/p3.svg",
     iconLists: ["/re.svg", "/tail.svg", "/ts.svg", "/three.svg", "/c.svg"],
     link: "/ui.aiimg.com",
   },
   {
     id: 4,
-    title: "Animated Apple Iphone 3D Website",
-    des: "Recreated the Apple iPhone 15 Pro website, combining GSAP animations and Three.js 3D effects..",
+    title: "Social media app",
+    des: "Planned an interactive social media app utilizing React JS, Node JS, MongoDB, Express JS, and API integration to  ensure real time data updates and user engagement. ",
     img: "/p4.svg",
     iconLists: ["/next.svg", "/tail.svg", "/ts.svg", "/three.svg", "/gsap.svg"],
     link: "/ui.apple.com",
@@ -173,45 +173,28 @@ export const companies = [
 export const workExperience = [
   {
     id: 1,
-    title: "Frontend Engineer Intern",
-    desc: "Assisted in the development of a web-based platform using React.js, enhancing interactivity.",
+    title: "FullStack Developer Intern",
+    desc: " Developed a solid foundation in full-stack programming by learning essential web technologies, including HTML, CSS, and JavaScript frameworks like React JS within a condensed 15-day internship timeframe. ",
     className: "md:col-span-2",
     thumbnail: "/exp1.svg",
   },
-  {
-    id: 2,
-    title: "Mobile App Dev - JSM Tech",
-    desc: "Designed and developed mobile app for both iOS & Android platforms using React Native.",
-    className: "md:col-span-2", // change to md:col-span-2
-    thumbnail: "/exp2.svg",
-  },
-  {
-    id: 3,
-    title: "Freelance App Dev Project",
-    desc: "Led the dev of a mobile app for a client, from initial concept to deployment on app stores.",
-    className: "md:col-span-2", // change to md:col-span-2
-    thumbnail: "/exp3.svg",
-  },
-  {
-    id: 4,
-    title: "Lead Frontend Developer",
-    desc: "Developed and maintained user-facing features using modern frontend technologies.",
-    className: "md:col-span-2",
-    thumbnail: "/exp4.svg",
-  },
+  
 ];
 
 export const socialMedia = [
   {
     id: 1,
     img: "/git.svg",
+    src: "https://github.com/Isaac-Jeddiah",
   },
   {
     id: 2,
     img: "/twit.svg",
+    src: "https://www.linkedin.com/in/isaac-jeddiah-40ba02256/",
   },
   {
     id: 3,
     img: "/link.svg",
+    src: "https://www.linkedin.com/in/isaac-jeddiah-40ba02256/",
   },
 ];
