@@ -10,6 +10,7 @@ export const metadata: Metadata = {
   title: "Isaac's Portfolio",
   description: "My Personal Portfolio",
 };
+export const revalidate = 3600; // Revalidate every hour
 
 export default function RootLayout({
   children,

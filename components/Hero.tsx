@@ -1,24 +1,25 @@
-import { FaLocationArrow } from "react-icons/fa6";
-import { FaCopy, FaFlag } from "react-icons/fa";
+import { FaLocationArrow, FaCopy } from "react-icons/fa6";
 import MagicButton from "./MagicButton";
 import { Spotlight } from "./ui/Spotlight";
-import Typewriter from 'typewriter-effect';
-const Hero = () => {
+import Typewriter from "typewriter-effect";
 
+const Hero = () => {
   const copyToClipboard = (text: string) => {
-    navigator.clipboard.writeText(text).then(() => {
-      alert(`${text} copied to clipboard`);
-    }).catch(err => {
-      console.error('Could not copy text: ', err);
-    });
+    navigator.clipboard
+      .writeText(text)
+      .then(() => {
+        alert(`${text} copied to clipboard`);
+      })
+      .catch((err) => {
+        console.error("Could not copy text: ", err);
+      });
   };
 
   return (
     <div className="relative z-10">
-      {" "}
-      {/* Ensure proper z-index */}
-      <div className="flex flex-col items-center relative my-20 z-10 max-w-7xl mx-auto p-6 border-2 border-dashed rounded-lg animate-border">
-        <div className="pb-20 pt-36 relative">
+      <div></div>
+      <div className="flex flex-col items-center relative my-10 md:my-20 z-10 max-w-7xl mx-auto p-4 md:p-6 border-2 border-dashed rounded-lg animate-border">
+        <div className="pb-10 md:pb-20 pt-20 md:pt-36 relative">
           <div>
             <Spotlight
               className="-top-40 -left-10 md:-left-32 md:-top-20 h-screen"
@@ -34,60 +35,45 @@ const Hero = () => {
             />
           </div>
 
-          {/**
-           *  UI: grid
-           *  change bg color to bg-black-100 and reduce grid color from
-           *  0.2 to 0.03
-           */}
-          <div
-            className="h-screen w-full dark:bg-black-100 bg-white dark:bg-grid-white/[0.03] bg-grid-black-100/[0.2]
-        absolute top-0 left-0 flex items-center justify-center"
-          >
-            {/* Radial gradient for the container to give a faded look */}
-            <div
-              // chnage the bg to bg-black-100, so it matches the bg color and will blend in
-              className="absolute pointer-events-none inset-0 flex items-center justify-center dark:bg-black-100
-          bg-white [mask-image:radial-gradient(ellipse_at_center,transparent_20%,black)]"
-            />
-          </div>
-
-          <div className="flex flex-col items-center relative my-20 z-10 max-w-7xl mx-auto p-6 border-2 border-dashed rounded-lg animate-border">
-            <div className="flex justify-between w-full mb-6">
-              <div className="flex items-center space-x-2">
-                <p className="text-white">+917397610139</p>
-                <button
-                  onClick={() => copyToClipboard("+91123456789")}
-                  className="bg-teal-500 text-white px-2 py-1 rounded flex items-center"
-                >
-                  <FaCopy className="mr-1" />
-                </button>
+          <div className="flex flex-col items-center relative my-10 md:my-20 z-10 max-w-7xl mx-auto p-4 md:p-6 border-2 border-dashed rounded-lg animate-border">
+            <div className="flex flex-col md:flex-row w-full mb-6 space-y-4 md:space-y-0">
+              <div className="flex flex-col md:flex-row items-center space-y-2 md:space-y-0 md:space-x-4">
+                <div className="flex items-center space-x-2">
+                  <p className="text-white text-sm md:text-base">
+                    +917397610139
+                  </p>
+                  <button
+                    onClick={() => copyToClipboard("+917397610139")}
+                    className="bg-teal-500 text-white px-2 py-1 rounded flex items-center"
+                  >
+                    <FaCopy className="mr-1" />
+                  </button>
+                </div>
+                <div className="flex items-center space-x-2">
+                  <p className="text-white text-sm md:text-base">
+                    isaacjeddiah@gmail.com
+                  </p>
+                  <button
+                    onClick={() => copyToClipboard("isaacjeddiah@gmail.com")}
+                    className="bg-teal-500 text-white px-2 py-1 rounded flex items-center"
+                  >
+                    <FaCopy className="mr-1" />
+                  </button>
+                </div>
               </div>
-              <div>
-                <a href="https://docs.google.com/document/d/1ufKSQi_XR4etywh_fUA9KLgnf5yco86-chziBcy_CLI/edit?usp=sharing">
+              <div className="text-center md:text-right">
+                <a
+                  href="https://docs.google.com/document/d/1ufKSQi_XR4etywh_fUA9KLgnf5yco86-chziBcy_CLI/edit?usp=sharing"
+                  className="text-teal-500 hover:underline"
+                >
                   My Resume
                 </a>
               </div>
-              <div className="flex items-center space-x-2">
-                <p className="text-white">isaacjeddiah@gmail.com</p>
-                <button
-                  onClick={() => copyToClipboard("isaac@gmail.com")}
-                  className="bg-teal-500 text-white px-2 py-1 rounded flex items-center"
-                >
-                  <FaCopy className="mr-1" />
-                </button>
-              </div>
             </div>
 
-            <div className="flex justify-between items-center w-full">
-              <div className="max-w-xl">
-                {/* {<p className="uppercase tracking-widest text-xs text-blue-100 mb-2">
-              Dynamic Web Magic with Next.js
-            </p>} */}
-
-                {/**
-                 *  Typewriter effect for the introduction
-                 */}
-                <div className="text-3xl md:text-4xl lg:text-5xl text-white">
+            <div className="flex flex-col md:flex-row items-center justify-between w-full mt-8 md:mt-0">
+              <div className="max-w-xl text-center md:text-left mb-8 md:mb-0">
+                <div className="text-2xl md:text-4xl lg:text-5xl text-white">
                   Hi! I am Isaac Jeddiah, <br />I am a
                 </div>
                 <div className="text-3xl md:text-4xl lg:text-5xl text-teal-500">
@@ -109,12 +95,13 @@ const Hero = () => {
                 </a>
               </div>
 
-              <div className="relative">
-                <div className="w-48 h-48 rounded-full bg-blue-600 absolute -top-15 -right-15"></div>
+              <div className="relative w-32 h-32 md:w-48 md:h-48">
+                <div className="w-full h-full rounded-full bg-blue-600 absolute -top-15 -right-15"></div>
                 <img
                   src="/profileimg.png" // Replace with your actual image path
                   alt="My Photo"
-                  className="w-48 h-48 rounded-full relative z-10"
+                  className="w-full h-full rounded-full relative z-10 object-cover"
+                  loading="eager"
                 />
               </div>
             </div>

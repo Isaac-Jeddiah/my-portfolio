@@ -13,20 +13,24 @@ import { FloatingNav } from "@/components/ui/FloatingNavbar";
 import Skills from "@/components/Skills";
 const Home = () => {
   return (
-    <main className="relative bg-black-100 flex justify-center items-center flex-col overflow-hidden mx-auto sm:px-10 px-5">
-      <div className="max-w-7xl w-full pt-12 ">
-        {" "}
-        {/* Add top padding */}
-        <FloatingNav navItems={navItems} />
-        <Hero />
-        <Grid />
-        <RecentProjects />
-        <Skills />
-        <Experience />
-        <Approach />
-        <Footer />
-      </div>
-    </main>
+    <>
+      <div className="relative bg-black-100 flex max-w-7xl w-full pt-20 md:pt-20"></div>
+      <main className="relative bg-black-100 flex justify-center items-center flex-col overflow-hidden mx-auto sm:px-10 px-5">
+        <div className="max-w-7xl w-full pt-20 md:pt-24 ">
+          {" "}
+          {/* Add top padding */}
+          <div></div>
+          <FloatingNav navItems={navItems} />
+          <Hero />
+          <Grid />
+          <RecentProjects />
+          <Skills />
+          <Experience />
+          <Approach />
+          <Footer />
+        </div>
+      </main>
+    </>
   );
 };
 
