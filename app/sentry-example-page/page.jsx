@@ -35,7 +35,7 @@ export default function Page() {
           </svg>
         </h1>
 
-        <p>Get started by sending us a sample error:</p>
+        {/* <p>Get started by sending us a sample error:</p>
         <button
           type="button"
           style={{
@@ -61,8 +61,8 @@ export default function Page() {
           }}
         >
           Throw error!
-        </button>
-
+        </button> */}
+{/* 
         <p>
           Next, look for the error on the{" "}
           <a href="https://javascript-mastery.sentry.io/issues/?project=4507222371729408">Issues Page</a>.
@@ -72,7 +72,7 @@ export default function Page() {
           <a href="https://docs.sentry.io/platforms/javascript/guides/nextjs/">
             https://docs.sentry.io/platforms/javascript/guides/nextjs/
           </a>
-        </p>
+        </p> */}
       </main>
     </div>
   );
